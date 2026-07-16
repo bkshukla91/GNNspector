@@ -1,8 +1,19 @@
---index-url https://download.pytorch.org/whl/cpu
-torch
-tree-sitter
-tree-sitter-languages
-requests
-urllib3
-openai
+# Python Bindings for Tree-sitter (Exact compatible versions)
+tree-sitter==0.21.3
+tree-sitter-languages==1.10.2
 
+# Deep Learning & GNN Frameworks
+torch>=2.0.0
+torch-geometric>=2.3.0
+transformers>=4.30.0
+
+# LLM & API Integrations
+ollama>=0.1.0
+requests>=2.31.0
+
+# CLI Formatting & UI
+rich>=13.0.0
+
+# Data & Math Operations
+numpy>=1.24.0
+networkx>=3.0
