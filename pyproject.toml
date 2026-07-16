@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gnnspector"
+version = "2.0.0"
+description = "GNN-based Static Application Security Testing (SAST) Tool"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{ name = "Balkrishna Shukla" }]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Topic :: Security",
+]
+dependencies = [
+    "torch>=2.6.0",
+    "torch-geometric",
+    "transformers",
+    "requests",
+    "numpy",
+    "python-dotenv",
+    "rich",
+    "tree-sitter-languages"
+]
+
+[project.scripts]
+gnnspector = "gnnspector.scanner:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["gnnspector*"]
+
+[tool.setuptools.package-data]
+gnnspector = ["*.pt"]

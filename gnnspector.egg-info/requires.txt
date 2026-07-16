@@ -1,0 +1,8 @@
+torch>=2.6.0
+torch-geometric
+transformers
+requests
+numpy
+python-dotenv
+rich
+tree-sitter-languages

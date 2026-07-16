@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+gnnspector/__init__.py
+gnnspector/scanner.py
+gnnspector/vulnerability_gnn_model.pt
+gnnspector.egg-info/PKG-INFO
+gnnspector.egg-info/SOURCES.txt
+gnnspector.egg-info/dependency_links.txt
+gnnspector.egg-info/entry_points.txt
+gnnspector.egg-info/requires.txt
+gnnspector.egg-info/top_level.txt
