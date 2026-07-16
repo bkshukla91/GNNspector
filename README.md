@@ -24,6 +24,8 @@ The engine utilizes **Ollama** for hosting local LLMs to guarantee data privacy 
    ollama run deepseek-coder:1.3b
    sudo apt-get update
    sudo apt-get install build-essential python3-dev
+
+3. **Installation Setup
    git clone https://github.com/bkshukla91/GNNspector.git
    cd GNNspector
    pip install -e .
