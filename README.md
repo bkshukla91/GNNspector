@@ -15,7 +15,6 @@ To ensure the scanner operates correctly, your environment must satisfy the foll
 ### 1. Python Environment
 - **Python 3.10 or higher** must be installed on your system.
 - **Pip** (Python Package Manager) should be updated to the latest version.
-
 ### 2. Ollama & DeepSeek-Coder (Required for Local Offline Mode)
 The engine utilizes **Ollama** for hosting local LLMs to guarantee data privacy during code audits.
 1. **Install Ollama:** Download and install the application for your operating system from the [Official Ollama Website](https://ollama.com).
@@ -25,14 +24,17 @@ The engine utilizes **Ollama** for hosting local LLMs to guarantee data privacy 
    sudo apt-get update
    sudo apt-get install build-essential python3-dev
 
-3. **Installation Setup
+3. **Installation Setup:**
+    
+   ```bash 
    git clone https://github.com/bkshukla91/GNNspector.git
    cd GNNspector
    pip install -e .
    OPENROUTER_API_KEY=your_actual_api_key_here
    gnnspector path/to/your/target_code.c
 
-### 📄 License
+
+### 3. 📄 License
 This architecture is distributed under the MIT License - see the LICENSE file for open-source compliance details.
 
 👨‍💻 Author: Balkrishna Shukla
