@@ -56,8 +56,7 @@ cd GNNspector
 pip install -r requirements.txt
 pip install -e .
 
-# Set up your environment variable
-export OPENROUTER_API_KEY="your_actual_api_key_here"
+# [OPTIONAL] Set up cloud API key if local Ollama/DeepSeek is not working OPENROUTER_API_KEY="your_actual_api_key_here"
 
 # Run GNNspector
 gnnspector path/to/your/target_code.c
