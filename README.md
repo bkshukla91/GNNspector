@@ -19,16 +19,27 @@ To ensure the scanner operates correctly, your environment must satisfy the foll
 The engine utilizes **Ollama** for hosting local LLMs to guarantee data privacy during code audits.
 1. **Install Ollama:** Download and install the application for your operating system from the [Official Ollama Website](https://ollama.com).
 2. **Pull the DeepSeek Model:** Open your terminal or command prompt and execute the following command (this is mandatory for the offline pipeline):
-   ```bash
-   ollama run deepseek-coder:1.3b
-   sudo apt-get update
-   sudo apt-get install build-essential python3-dev
+
+### A. Install Ollama (For Linux/Ubuntu)
+Run this single command to download and install Ollama automatically:
+```bash
+curl -fsSL [https://ollama.com/install.sh](https://ollama.com/install.sh) | sh
+
+ollama run deepseek-coder:1.3b
+
+
+### B. Install Ollama (For Windows)
+* Direct Download Link: **[Download Ollama for Windows](https://ollama.com/download/OllamaSetup.exe)**
+* Run the downloaded `OllamaSetup.exe` file and click **Install**.
 
 3. **Installation Setup:**
     
    ```bash 
+   sudo apt-get update
+   sudo apt-get install build-essential python3-dev
    git clone https://github.com/bkshukla91/GNNspector.git
    cd GNNspector
+   pip install -r requirements.txt
    pip install -e .
    OPENROUTER_API_KEY=your_actual_api_key_here
    gnnspector path/to/your/target_code.c
