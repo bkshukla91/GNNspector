@@ -20,34 +20,53 @@ The engine utilizes **Ollama** for hosting local LLMs to guarantee data privacy 
 1. **Install Ollama:** Download and install the application for your operating system from the [Official Ollama Website](https://ollama.com).
 2. **Pull the DeepSeek Model:** Open your terminal or command prompt and execute the following command (this is mandatory for the offline pipeline):
 
-### A. Install Ollama (For Linux/Ubuntu)
+### 🚀 Installation & Setup
+
+#### A. Install Ollama (For Linux/Ubuntu)
 Run this single command to download and install Ollama automatically:
 ```bash
-curl -fsSL [https://ollama.com/install.sh](https://ollama.com/install.sh) | sh
+curl -fsSL https://ollama.com/install.sh | sh
+```
 
+To run the model, use:
+```bash
 ollama run deepseek-coder:1.3b
+```
 
+#### B. Install Ollama (For Windows)
+* **Direct Download Link:** [Download Ollama for Windows](https://ollama.com/download/OllamaSetup.exe)
+* **Step:** Run the downloaded `OllamaSetup.exe` file and click **Install**.
 
-### B. Install Ollama (For Windows)
-* Direct Download Link: **[Download Ollama for Windows](https://ollama.com/download/OllamaSetup.exe)**
-* Run the downloaded `OllamaSetup.exe` file and click **Install**.
+---
 
-3. **Installation Setup:**
-    
-   ```bash 
-   sudo apt-get update
-   sudo apt-get install build-essential python3-dev
-   git clone https://github.com/bkshukla91/GNNspector.git
-   cd GNNspector
-   pip install -r requirements.txt
-   pip install -e .
-   OPENROUTER_API_KEY=your_actual_api_key_here
-   gnnspector path/to/your/target_code.c
+### ⚙️ System Installation Setup
 
+Follow these steps to set up the environment and install GNNspector:
 
-### 3. 📄 License
-This architecture is distributed under the MIT License - see the LICENSE file for open-source compliance details.
+```bash 
+# Update system and install dependencies
+sudo apt-get update
+sudo apt-get install build-essential python3-dev
 
-👨‍💻 Author: Balkrishna Shukla
+# Clone the repository and navigate inside
+git clone https://github.com/bkshukla91/GNNspector.git
+cd GNNspector
 
-🏫 Affiliation: Cyber Security Branch, Engineering College Ajmer (ECA)
+# Install Python requirements
+pip install -r requirements.txt
+pip install -e .
+
+# Set up your environment variable
+export OPENROUTER_API_KEY="your_actual_api_key_here"
+
+# Run GNNspector
+gnnspector path/to/your/target_code.c
+```
+
+---
+
+### 📄 3. License
+This architecture is distributed under the MIT License - see the [LICENSE](LICENSE) file for open-source compliance details.
+
+* **👨‍💻 Author:** Balkrishna Shukla
+* **🏫 Affiliation:** Cyber Security Branch, Engineering College Ajmer (ECA)
