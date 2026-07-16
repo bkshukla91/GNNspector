@@ -1,7 +1,7 @@
 --index-url https://download.pytorch.org/whl/cpu
 torch
-tree-sitter==0.21.3
-tree-sitter-languages==1.10.2
+tree-sitter
+tree-sitter-languages
 requests
 urllib3
 openai
